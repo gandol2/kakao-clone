@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="카카오 클론에 온것을 환영해" />
+    <meta name="author" content="노마드 코더" />
+    <title>selectors</title>
+    <!--<link href="style.css" rel="stylesheet" />-->
+    <style>
+      input[required="required"] {
+        background-color: red;
+      }
+      .container > .box {
+        background-color: yellow;
+      }
+      .box {
+        border: 1px solid yellow;
+      }
+      .box {
+        background-color: blue;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .box:nth-child(1n + 4) {
+        background-color: pink;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="boxhild"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required" />
+        <input type="submit" required="required" />
+      </div>
+    </div>
+  </body>
+</html>

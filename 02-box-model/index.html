@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="카카오 클론에 온것을 환영해" />
+    <meta name="author" content="노마드 코더" />
+    <title>Box Model</title>
+    <!--<link href="style.css" rel="stylesheet" />-->
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding: 20px 10px 5px 2px;
+        margin: 20px;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+
+        border: 5px dashed red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="카카오 클론에 온것을 환영해" />
+    <meta name="author" content="노마드 코더" />
+    <title>CSS States</title>
+    <!--<link href="style.css" rel="stylesheet" />-->
+    <style>
+      .box {
+        background-color: red;
+        font-size: 40px;
+      }
+
+      /* 마우스 올릴시 확성 */
+      .box:hover {
+        background-color: pink;
+      }
+
+      /* 클릭시 활성 */
+      .box:active {
+        background-color: green;
+      }
+
+      .box:focus {
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <textarea class="box">블라블라블라</textarea>
+  </body>
+</html>
